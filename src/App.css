@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  color: #101b3f;
+}
+
+/* Navbar */
+nav {
+  background-color: #101b3f;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: #f5b82e;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* Hero */
+section {
+  background: linear-gradient(120deg, #101b3f, #263d79);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #f5b82e;
+  color: #101b3f;
+  border: none;
+  padding: 12px 22px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffd45c;
+}
+
+/* Match Cards */
+#matches {
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.match-card {
+  background-color: white;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  section h1 {
+    font-size: 26px;
+  }
+
+  .match-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
